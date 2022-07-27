@@ -22,6 +22,13 @@ function App() {
   
   return (
     <div className="container">
+      <h1>React Philosophy:</h1>
+      <ul>
+        <li>Composition: We develop a project composing multiple small components</li>
+        <li>Declarative Code: We use map instead of loop-"Step by step copd"</li>
+        <li>Unidirectional Data flow: Data will flow on a single direction</li>
+        <li>Just javascript</li>
+      </ul>
       <h1>Count: {countTwo + 1}</h1>
       <h1>Count: {count}</h1>
       <h1>Count: {count3}</h1>
