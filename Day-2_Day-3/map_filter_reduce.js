@@ -66,35 +66,7 @@ console.log('Find bigger element then 2 from array is: ', findElm2(nums6));
 
 // // Filter
 const nums7 = [1,2,3,4];
-function findElm3(recArr) {
+function filterElm3(recArr) {
     return recArr.filter(elm => elm > 2)
 }
-console.log('Find bigger element then 2 from array is: ', findElm3(nums7));
-
-// // Async
-const getVar = () => {
-    setTimeout(function() {
-       console.log('A Function that takes some time');
-    }, 3000)
- }
- 
- const printSomething = () => {
-    console.log('Another Function');
- }
- 
- getVar();
- printSomething();
-
-// // Callback function
-const getVarC = (callback) => {
-    setTimeout(function() {
-       console.log('A Function that takes some time');
-       callback();
-    }, 3000)
- }
- 
- const printSomethingC = () => {
-    console.log('Another Function');
- }
- 
- getVarC(printSomethingC);
+console.log('Filter bigger element then 2 from array is: ', filterElm3(nums7));
