@@ -12,14 +12,14 @@ const Count = () => {
   const [countThree, setCountThree] = useState(0)
 
   const handleIncrement = (num) => {
-    setCountThree((a) => a + num)
+    setCountThree((prevCountThree) => prevCountThree + num)
   }
   const randomFunc = () => {
     handleIncrement(1)
   }
 
   const handleDecrement = (num) => {
-    setCountThree((prevCount) => prevCount - num)
+    setCountThree(prevCountThree => prevCountThree - num)
   }
   const handleReset = () => {
     setCountThree(0)
