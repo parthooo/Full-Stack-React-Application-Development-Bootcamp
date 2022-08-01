@@ -26,10 +26,19 @@ const Notes = () => {
             <li>If we need to Track or change or update any value/data regularly, then we should use <b>usestate</b></li>
           </ul>
 
-          <h1>When a component rerandering?</h1>
+          <h1>When a component re-rendering?</h1>
           <ul>
-            <li>at the time of state update</li>
+            <li>at the time of State Update</li>
+            <li>at the time of Props Change</li>
             <li>at the time of Force update</li>
+          </ul>
+
+          <h1>CSS Styling</h1>
+          <ul>
+            <li>Inline CSS</li>
+            <li>External CSS</li>
+            <li>Modular CSS</li>
+            <li>Component CSS</li>
           </ul>
         </div>
     );

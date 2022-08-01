@@ -1,0 +1,13 @@
+.randomCards {
+    display: 'inline-block';
+    width: '150px';
+    height: '150px';
+    background-color: 'palevioletred';
+    color: '#fff';
+    line-height: '150px';
+    font-weight: 'bolder';
+    font-size: '30px';
+    margin-right: 10;
+    text-align: 'center';
+    border-radius: '100%';
+}
