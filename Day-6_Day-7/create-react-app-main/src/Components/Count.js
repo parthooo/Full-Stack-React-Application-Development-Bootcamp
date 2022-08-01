@@ -1,23 +1,19 @@
 import React from 'react';
-import { useState } from "react"
 
-const Count = () => {
+const Count = ({countThree, setCountThree}) => {
       // count variable
   const countOne = 0
 
   // countTwo varibale
   const countTwo = 5
 
-  // countThree
-  const [countThree, setCountThree] = useState(0)
-
+  // countThree setCountThree functionality
   const handleIncrement = (num) => {
     setCountThree((prevCountThree) => prevCountThree + num)
   }
   const randomFunc = () => {
     handleIncrement(1)
   }
-
   const handleDecrement = (num) => {
     setCountThree(prevCountThree => prevCountThree - num)
   }
