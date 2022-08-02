@@ -4,6 +4,7 @@ import Count from "./Components/Count"
 import IsOddOrEven from "./Components/IsOddOrEven"
 import RandomCard from "./Components/RandomCard"
 import './App.css';
+import styles from './App.module.css';
 
 
 function App() {
@@ -16,10 +17,14 @@ function App() {
 
   return (
     <>
+      <div className={styles.displayFlex}>
         <Notes />
-        <Count countThree={countThree} setCountThree={setCountThree}/>
-        <IsOddOrEven countThree={countThree} pickedvalue={pickedvalue}/>
-        <RandomCard cardValus={cardValus} setPickedValue={setPickedValue}/>
+        <div className={styles.textCenter}>
+          <Count countThree={countThree} setCountThree={setCountThree} />
+          <IsOddOrEven countThree={countThree} pickedvalue={pickedvalue} />
+          <RandomCard cardValus={cardValus} setPickedValue={setPickedValue} />
+        </div>
+      </div>
     </>
   );
 }

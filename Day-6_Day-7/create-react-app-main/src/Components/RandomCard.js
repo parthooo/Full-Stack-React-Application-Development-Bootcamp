@@ -13,6 +13,8 @@ const RandomCard = ({ cardValus, setPickedValue }) => {
         marginRight: 10,
         textAlign: 'center',
         borderRadius: '100%',
+        cursor: 'pointer'
+        
       }
 
   return (
