@@ -9,7 +9,7 @@ function App() {
   const [startQuiz, setStartQuiz] = useState(false);
   const [currentAnswers, setCurrentAnswers] = useState(null);
   const [endGame, setEndGame] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(null);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const navigatenext = () => {
     //flushsync
