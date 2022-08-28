@@ -17,7 +17,7 @@ function App() {
     const validQuestionIndex = currentQuizIndex < quizzes.length;
     if (validQuestionIndex) {
       setCurrentQuestionIndex(currentQuizIndex)
-      // console.log(currentQuestionIndex);
+      console.log(currentQuizIndex);
       const question = quizzes[currentQuizIndex];
       setCurrentAnswers(shuffle(question));
     } else {
@@ -43,10 +43,10 @@ function App() {
 
   return (
     <>
-      {endGame && <p>Its time to show result</p>}
-      {!startQuiz && !endGame && <button onClick={fetchData}>Start</button>}
+      {endGame && <p className="text-center">Its time to show result</p>}
+      {!startQuiz && <button onClick={fetchData} className="btn-style">Start</button>}
       <div className="container">
-        {loaded &&
+        {loaded && !endGame && (
           <QuestionCard
             quiz={quizzes[currentQuestionIndex]}
             currentAnswers={currentAnswers}
@@ -54,7 +54,7 @@ function App() {
             quizzes={quizzes}
             navigatenext={navigatenext}
           />
-        }
+        )}
       </div>
     </>
   );

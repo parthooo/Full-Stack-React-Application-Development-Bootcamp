@@ -2,7 +2,7 @@ import React from 'react';
 
 const AnswerCard = ({answer}) => {
     return (
-        <div>
+        <div className='quiz-answer'>
             {answer}
         </div>
     );

@@ -19,7 +19,7 @@ const QuestionCard = ({
                 answer={answer} 
                 />
             ))}
-            <button onClick={navigatenext}>Next</button>
+            <button onClick={navigatenext} className="btn-style">Next</button>
         </div>
     );
 };
