@@ -96,8 +96,11 @@ button {
   pointer-events: none;
 }
 
-.btn-style{
+.display-block{
   display:block; 
   margin: 0px auto; 
+}
+
+.btn-style{
   cursor:pointer
 }

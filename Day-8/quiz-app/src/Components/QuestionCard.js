@@ -6,7 +6,10 @@ const QuestionCard = ({
     currentAnswers,
     currentQuestionIndex,
     quizzes,
-    navigatenext
+    navigatenext,
+    pickAnswer,
+    correctAnswer,
+    pickedAnswer,
 }) => {
     // console.log(quiz)
     return (
@@ -17,9 +20,12 @@ const QuestionCard = ({
                 <AnswerCard 
                 key={i} 
                 answer={answer} 
+                pickAnswer={pickAnswer}
+                correctAnswer={correctAnswer}
+                pickedAnswer={pickedAnswer}
                 />
             ))}
-            <button onClick={navigatenext} className="btn-style">Next</button>
+            <button onClick={navigatenext} className="display-block btn-style">Next</button>
         </div>
     );
 };
