@@ -14,10 +14,12 @@ const QuestionCard = ({
             <p>Question : {currentQuestionIndex + 1} / {quizzes.length} {' '}</p>
             <h3> {quiz.question} </h3>
             {currentAnswers.map((answer, i) => (
-                <AnswerCard key={i} answer={answer} />
+                <AnswerCard 
+                key={i} 
+                answer={answer} 
+                />
             ))}
             <button onClick={navigatenext}>Next</button>
-
         </div>
     );
 };
